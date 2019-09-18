@@ -1,0 +1,33 @@
+.site {
+    width: 1200px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+th {
+    text-align: left;
+}
+
+.tr-sum {
+    background-color: lightgray;
+    font-weight: bold;
+}

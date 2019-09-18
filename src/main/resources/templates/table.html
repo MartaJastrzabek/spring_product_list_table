@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela produktów</title>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+</head>
+<body>
+<div class="site">
+    <h2>Tabela produktów</h2>
+    <table>
+        <tr>
+            <th>Nazwa</th>
+            <th>Cena</th>
+        </tr>
+        <tr th:each="product: ${products}">
+            <td th:text="${product.name}">Nazwa produktu</td>
+            <td th:text="${product.price}">Ceny produktu</td>
+        </tr>
+        <tr class="tr-sum">
+            <td>Suma cen</td>
+            <td th:text="${sum}">Suma cen</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
